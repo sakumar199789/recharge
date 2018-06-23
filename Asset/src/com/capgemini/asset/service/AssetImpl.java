@@ -11,7 +11,7 @@ public class AssetImpl implements IAssetInterface{
 
 	@Override
 	public boolean isValidUsername(String name) {
-	Pattern namePattern=Pattern.compile("^[A-Za-z]{3,}$");
+	Pattern namePattern=Pattern.compile("^[A-Z][A-Za-z]{2,}$");
 	Matcher nameMatcher=namePattern.matcher(name);
 	return nameMatcher.matches();
 	}
@@ -31,6 +31,4 @@ public class AssetImpl implements IAssetInterface{
 		boolean temp=id.dataAuthentication(a);
 		return temp;
 	}
-	
-
 }

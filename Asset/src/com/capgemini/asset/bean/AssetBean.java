@@ -1,14 +1,22 @@
 package com.capgemini.asset.bean;
 
 public class AssetBean {
-	String username,password;
+	String userNameId,password,userType;
 
-	public String getUsername() {
-		return username;
+	public String getUserType() {
+		return userType;
+	}
+
+	public void setUserType(String userType) {
+		this.userType = userType;
+	}
+
+	public String getUserNameId() {
+		return userNameId;
 	}
 
 	public void setUsername(String username) {
-		this.username = username;
+		this.userNameId = username;
 	}
 
 	public String getPassword() {
